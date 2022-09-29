@@ -23,8 +23,10 @@
     --gg-fs-15: 15px;
     --gg-fs-18: 18px;
     --gg-fs-medium: 20px;
+    --gg-fs-medium-large: 22px;
     --gg-fs-large: 25px;
     --gg-fs-larger: 30px;
+    --gg-fs-35: 35px;
     --gg-fs-36: 36px;
     --gg-fs-38: 38px;
     --gg-fs-50: 50px;
@@ -63,7 +65,15 @@ body{
     width: 60%;
 }
 
+.gg-w-90{
+    width: 90%;
+}
+
 /* MY FONTS */
+
+.gg-fs-smaller{
+    font-size: var(--gg-fs-smaller);
+}
 
 .gg-fs-15{
     font-size: var(--gg-fs-15);
@@ -71,6 +81,18 @@ body{
 
 .gg-fs-medium{
     font-size: var(--gg-fs-medium);
+}
+
+.gg-fs-medium-large{
+    font-size: var(--gg-fs-medium-large);
+}
+
+.gg-fs-larger{
+    font-size: var(--gg-fs-larger);
+}
+
+.gg-fs-35{
+    font-size: var(--gg-fs-35);
 }
 
 .gg-fs-38{
@@ -127,5 +149,4 @@ main #hero2 .jumbotrone{
     background-position: center top;
     background-size: cover;
 }
-
 
