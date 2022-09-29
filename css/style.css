@@ -6,18 +6,20 @@
 
 :root{
     --black: #1f1f1f; 
-    --blue: #3a6de7; 
+    --blue: #3a6de7;
+    --light-blue-text: #2083D4;
     --light-grey: #bebcbb; 
     --dark-blue: #161c3b; 
     --red: #cd3d0f; 
+    --grey-text: #737373;
     --lavish-white: #d9dadc;
     --blue-button: #015499;
     --white100: #ffffff;
     --black100: #000000;
 
-
     --gg-fs-smaller: 12px;
     --gg-fs-small: 14px;
+    --gg-fs-15: 15px;
     --gg-fs-18: 18px;
     --gg-fs-medium: 20px;
     --gg-fs-large: 25px;
@@ -36,7 +38,19 @@ body{
 /* GENERAL */
 
 
+/* MY FONT COLORS */
+
+/* MY WIDTHS */
+
+.gg-w-60{
+    width: 60%;
+}
+
 /* MY FONTS */
+
+.gg-fs-15{
+    font-size: var(--gg-fs-15);
+}
 
 .gg-fs-medium{
     font-size: var(--gg-fs-medium);
@@ -83,8 +97,11 @@ header nav .nav-link{
 }
 
 /* MAIN */
-main #hero{
+
+main #hero .jumbotrone{
     height: 650px;
     background-image: url("../img/jumbo-bg.png");
     background-position: center top;
 }
+
+
