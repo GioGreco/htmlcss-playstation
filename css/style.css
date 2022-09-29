@@ -17,6 +17,7 @@
     --white100: #ffffff;
     --black100: #000000;
 
+    --gg-fs-10: 10px;
     --gg-fs-smaller: 12px;
     --gg-fs-small: 14px;
     --gg-fs-15: 15px;
@@ -36,6 +37,22 @@ body{
 
 
 /* GENERAL */
+.highlight::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    bottom: 3%;
+    opacity: 0;
+    transition: opacity .2s ease-in-out, transform .5s ease-in-out;
+}
+
+.highlight:hover::after{
+    opacity: 1;
+    transform: translate(0, 5px);
+}
 
 
 /* MY FONT COLORS */
@@ -102,6 +119,13 @@ main #hero .jumbotrone{
     height: 650px;
     background-image: url("../img/jumbo-bg.png");
     background-position: center top;
+}
+
+main #hero2 .jumbotrone{
+    min-height: 700px;
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-position: center top;
+    background-size: cover;
 }
 
 
