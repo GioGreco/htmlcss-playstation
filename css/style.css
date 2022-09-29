@@ -23,6 +23,7 @@
     --gg-fs-large: 25px;
     --gg-fs-larger: 30px;
     --gg-fs-36: 36px;
+    --gg-fs-38: 38px;
     --gg-fs-50: 50px;
     --gg-fs-60: 60px;
 }
@@ -39,6 +40,10 @@ body{
 
 .gg-fs-medium{
     font-size: var(--gg-fs-medium);
+}
+
+.gg-fs-38{
+    font-size: var(--gg-fs-38);
 }
 
 /* BG COLORS */
@@ -73,10 +78,13 @@ body{
 
 /* HEADER */
 
-header{
-    min-height: 100px;
-}
-
 header nav .nav-link{
     color: var(--black100);
+}
+
+/* MAIN */
+main #hero{
+    height: 650px;
+    background-image: url("../img/jumbo-bg.png");
+    background-position: center top;
 }
