@@ -205,6 +205,10 @@ header nav .gg-dropdown-item{
     padding: 10px;
 }
 
+header nav .gg-dropdown-item:hover{
+    box-shadow: 1px 1px 5px var(--grey-text);
+}
+
 header nav .nav-link.show::after{
     transform: rotate(180deg);
 }
@@ -280,6 +284,10 @@ footer ul li a{
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
+}
+
+footer ul li a:hover{
+    color: var(--light-grey);
 }
 
 footer .sie-logo{
