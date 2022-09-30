@@ -65,6 +65,49 @@ ul{
     height: 35px;
 }
 
+.my-btn{
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 0 0 4px var(--white),
+                inset 0 0 0 2px var(--blue);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.my-btn.red{
+    box-shadow: 0 0 0 4px var(--black),
+                inset 0 0 0 2px var(--red);
+}
+
+.my-btn.white{
+    box-shadow: 0 0 0 4px var(--dark-blue),
+                inset 0 0 0 2px var(--white100);
+}
+
+.my-btn.grey{
+    box-shadow: 0 0 0 4px var(--light-grey),
+                inset 0 0 0 2px var(--lavish-white);
+}
+
+.my-btn:hover{
+    box-shadow: 0 0 0 4px var(--blue),
+                inset 0 0 0 2px var(--white100);
+}
+
+.my-btn.red:hover{
+    box-shadow: 0 0 0 4px var(--red),
+                inset 0 0 0 2px var(--black100);
+}
+
+.my-btn.white:hover{
+    box-shadow: 0 0 0 4px var(--white100),
+                inset 0 0 0 2px var(--dark-blue);
+}
+
+.my-btn.grey:hover{
+    box-shadow: 0 0 0 4px var(--lavish-white),
+                inset 0 0 0 2px var(--light-grey);
+}
 /* MY WIDTHS */
 
 .gg-w-60{
