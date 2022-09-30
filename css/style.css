@@ -199,9 +199,18 @@ header nav .nav-link{
 }
 
 header nav .gg-dropdown-item{
+    display: block;
     text-decoration: none;
     color: var(--black100);
     padding: 10px;
+}
+
+header nav .nav-link.show::after{
+    transform: rotate(180deg);
+}
+
+header nav .nav-link:hover{
+    color: var(--blue);
 }
 
 /* MAIN */
@@ -217,11 +226,37 @@ main #hero .jumbotrone .row{
     padding: 350px 0 80px;
 }
 
+main #hero .to-hero-highlight{
+    opacity: 50%;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+main #hero .to-hero-highlight.active{
+    opacity: 100%;
+    transform: translate(0, -10px);
+    box-shadow: 0px 8px 8px var(--grey-text);
+}
+
+main #hero .to-hero-highlight:hover{
+    opacity: 100%;
+    transform: translate(0, -10px);
+    box-shadow: 0px 8px 8px var(--grey-text);
+}
+
 main #hero2 .jumbotrone{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+main #latest-drops .on-latest-focus{
+    width: 95%;
+    transition: width .5s ease-in-out;
+}
+
+main #latest-drops .on-latest-focus:hover{
+    width: 100%
 }
 
 main #hero2 .jumbotrone .row{
