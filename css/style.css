@@ -38,7 +38,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* GENERAL */
 .highlight::after{
     content: "";
@@ -107,6 +106,10 @@ ul{
 .my-btn.grey:hover{
     box-shadow: 0 0 0 4px var(--lavish-white),
                 inset 0 0 0 2px var(--light-grey);
+}
+
+.gg-text-blue{
+    color: var(--blue);
 }
 /* MY WIDTHS */
 
@@ -186,6 +189,19 @@ ul{
 
 header nav .nav-link{
     color: var(--black100);
+}
+
+.gg-dropdown{
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    transform: translate(0, -3px);
+}
+
+header nav .gg-dropdown-item{
+    text-decoration: none;
+    color: var(--black100);
+    padding: 10px;
 }
 
 /* MAIN */
